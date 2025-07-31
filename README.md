@@ -17,7 +17,7 @@
 
 ## 🛠️ 技术栈
 
-- **核心框架**: [Vue 3](https://vuejs.org) (Composition API + `<script setup>`)
+- **核心框架**: [Vue 3](https://vuejs.org) (Composition API + `<script setup>`)(v3.5.18)
 - **类型系统**: [TypeScript](https://www.typescriptlang.org/) (v5+)
 - **构建工具**: [Vite](https://vitejs.dev) (极速冷启动，HMR)
 - **状态管理**: [Pinia](https://pinia.vuejs.org) (官方推荐)
@@ -72,10 +72,6 @@ vue3-pc/
 ├── package.json
 └── README.md
 ```
-
-````
-
----
 
 ## 🚀 快速开始
 
@@ -211,4 +207,4 @@ git commit -m "chore: 升级依赖版本"
    - 项目名称（如 `vue3-pc`）→ 你的实际项目名
    - 可根据需要增删“功能特性”、“目录结构”等内容。
 3. 如果你有截图、演示地址、设计文档等，可以在 `## 📄 演示` 部分添加。
-````
+```
