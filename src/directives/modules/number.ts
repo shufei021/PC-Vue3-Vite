@@ -132,7 +132,7 @@ const number: Directive<HTMLInputElement, NumberDirectiveValue> = {
     delete inputEl.formatVal
     delete inputEl.inputHandler
     delete inputEl.blurHander
-  },
+  }
 }
 
 export default number

@@ -6,7 +6,7 @@ const focus: Directive<HTMLInputElement> = {
   // 及他自己的所有子节点都挂载完成后调用
   mounted(el) {
     el.focus()
-  },
+  }
 }
 export default focus
 // export default {

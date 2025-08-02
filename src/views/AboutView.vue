@@ -1,16 +1,28 @@
 <script setup lang="ts">
-import { getUserInfo, getUserList, slow } from '@/api/user'
+import { getUserInfo } from '@/api/user'
 import { useCounterStore } from '@/stores/mudules/counter'
 import { onMounted, ref } from 'vue'
 const counter = useCounterStore()
 const inputValue = ref('')
 onMounted(async () => {
   const info = await getUserInfo()
-  const userList = await getUserList({ page: 1, size: 20 })
-  console.log(info) // 应该拿到 mock 数据
-  console.log(userList) // 应该拿到 mock 数据
-  const slowTest = await slow()
-  console.log(slowTest)
+  const info1 = await getUserInfo()
+  console.log(
+    '%c [ info ]-9',
+    'font-size:13px; background:pink; color:#bf2c9f;',
+    info
+  )
+
+  console.log(
+    '%c [ info1 ]-11',
+    'font-size:13px; background:pink; color:#bf2c9f;',
+    info1
+  )
+  // const userList = await getUserList({ page: 1, size: 20 })
+  // console.log(info) // 应该拿到 mock 数据
+  // console.log(userList) // 应该拿到 mock 数据
+  // const slowTest = await slow()
+  // console.log(slowTest)
 })
 </script>
 
