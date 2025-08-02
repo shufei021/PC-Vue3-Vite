@@ -59,7 +59,7 @@ service.interceptors.response.use(
           console.error('请求失败：', response.statusText || message)
       }
     } else {
-      if (message.includes('timeout')) {
+      if (message.includes('timeout ')) {
         console.error('请求超时')
       } else if (message.includes('Network Error')) {
         console.error('网络错误')

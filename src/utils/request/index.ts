@@ -18,6 +18,7 @@ const handleResponse = <T>(res: AxiosResponse<T>, url: string): T => {
 }
 
 type Response<T = unknown> = Promise<T>
+
 export const get = <T = unknown>(
   url: string,
   params?: unknown,
